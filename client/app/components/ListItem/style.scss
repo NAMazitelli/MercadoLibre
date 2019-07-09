@@ -1,0 +1,34 @@
+.product{
+  background:#fff;
+  display:flex;
+  padding:16px;
+  border-bottom:2px solid #F7F7F7;
+  .product__img{
+      flex: 0 0 180px;
+    height:180px;
+    background:#333;
+    border-radius:4px;
+    background-size:cover;
+  }
+
+  .product__place{
+    margin-top:16px;
+    color:#666;
+    width:30%;
+    font-size:12px;
+    float:right;
+  }
+  .product__description{
+    color:#333;
+
+    width:70%;
+    padding:16px;
+    padding-right: 16.6666%;
+    h5{
+      line-height: 24px;
+      font-size:24px;
+      margin-bottom:32px;
+    }
+
+  }
+}

@@ -1,0 +1,91 @@
+a{color:#333;}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+main{
+	min-height:calc(100vh - 56px);
+	width:100%;
+	background:#EEEEEE;
+	overflow: hidden;
+	padding-bottom:32px
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body.fontLoaded {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#app {
+  background-color: #fafafa;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+p,
+label {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+}
+
+/* HELPERS */
+.flexbox{ 
+	display:flex; 
+}
+.fullheight{
+  min-height:100%;
+}
+.fullwidth{ 
+	width:100%; 
+}
+.nopad {
+	padding:0!important;
+}
+.nomarg {
+	margin:0!important;
+}
+
+/*SCROLLBAR*/
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(left, #96A6BF, #63738C);
+    box-shadow: inset 0 0 1px 1px #5c66706b;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #eee;
+    box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0,0,0,0.3);
+}
+
+.search-results{
+	padding:0 16px;
+	background:#FFFFFF;
+}
+@media (max-width: 650px) {
+  .mobile-column{
+    flex-direction: column;
+  }
+
+  .breadcrumbs{
+    padding: 15px!important;
+  }
+
+  .navbar.nav{
+    padding:0 15px;
+  }
+  article.product{
+    display: block !important;
+  }
+  
+}

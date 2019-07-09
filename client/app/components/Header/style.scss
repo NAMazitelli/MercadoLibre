@@ -1,0 +1,72 @@
+.navbar.nav{
+  background:#FFE600;
+  width:100%;
+  height:56px;
+  padding: 0;
+  display:block;
+  .flexbox.center{
+    align-items: center;
+      height:56px;
+
+  }
+}
+
+
+.nav-brand{
+	min-width:53px;
+	min-height:36px;
+	background-size: cover;
+	background-repeat:no-repeat;
+	display:block;
+}
+
+.search-input{
+  padding:10px 10px;
+  width:100%;
+  background: #FFFFFF;
+  border:0;
+  border-radius: 5px;
+  height:100%;
+  &:hover, &:active, &:focus{
+    outline:0;
+    box-shadow:0 0 5px 1px rgba(0,0,0,0.1);
+  }
+}
+
+.btn-group-container{
+  margin:0;
+  margin-left:20px;
+  width:100%;
+  position:relative;
+  .btn-group-addon{
+    position:absolute;
+    right:0;
+    top:0;
+    border-radius: 0  5px 5px 0;
+
+  }
+}
+
+.search-btn{
+  height:100%;
+  background-color:#EEEEEE;
+  padding:10px;
+  display: block;
+  border:0;
+  transition:all 0.4s;
+  &:active, &:visited, &:focus {
+    outline : 0;
+  }
+  &:active{
+    background-color:#cccccc;
+  }
+  &:before{
+    content:'';
+    display: block;
+    width:18px;
+    height:18px;
+    background-image:url('../../images/ic_Search.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+}

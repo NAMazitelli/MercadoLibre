@@ -1,5 +1,5 @@
 var async  = require('express-async-await')
-var handleSearch = require("../handleSearch")
+var handleSearch = require("../HandleSearch/handleSearch")
 var Router = require("./Router")
 
 class searchRouter extends Router {

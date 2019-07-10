@@ -11,7 +11,7 @@ const ErrorScreen = ({ error }) => ( // eslint-disable-line react/prefer-statele
 );
 
 ErrorScreen.propTypes = {
-  error: PropTypes.string
+  error: PropTypes.any
 };
 
 export default ErrorScreen;

@@ -11,7 +11,11 @@ const Product = ({ loading, error, product }) => {
   }
 
   if (error !== false) {
-    return <ErrorScreen error={error} />;
+    let errormsg = 'Ocurrio un error durante la busqueda';
+    if (typeof error === 'string') {
+      errormsg = error;
+    }
+    return <ErrorScreen error={errormsg} />;
   }
 
   if (product !== undefined && product !== false) {

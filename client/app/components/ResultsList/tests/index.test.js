@@ -14,12 +14,22 @@ describe('<ResultsList />', () => {
     ).toEqual(true);
   });
 
-  it('Deberia renderizar un error si no se pudo cargar', () => {
+
+  it('Deberia renderizar un error si fallo y el error es un string', () => {
     const renderedComponent = mount(
       <ResultsList loading={false} error={'Loading failed!'} />
     );
     expect(renderedComponent.text()).toMatch(/Loading failed!/);
   });
+
+
+  it('Deberia renderizar un error si fallo y el error es de otro tipo', () => {
+    const renderedComponent = mount(
+      <ResultsList loading={false} error={[]} />
+    );
+    expect(renderedComponent.text()).toMatch(/Ocurrio un error durante la busqueda/);
+  });
+
 
   it('Deberia renderizar un listado de productos si el response es correcto', () => {
    const products = {

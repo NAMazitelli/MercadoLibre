@@ -23,9 +23,9 @@ export function* getSingleProduct() {
     const product = yield call(request, requestURL);
     if (product === undefined || product.error) {
       yield put(singleProductLoadingError(product.error));
+    } else {
+      yield put(singleProductLoaded(product));
     }
-
-    yield put(singleProductLoaded(product));
   } catch (err) {
     yield put(singleProductLoadingError(err));
   }

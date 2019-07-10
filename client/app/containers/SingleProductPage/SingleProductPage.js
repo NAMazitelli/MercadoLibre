@@ -36,7 +36,6 @@ export default class SingleProductPage extends React.PureComponent { // eslint-d
       product
     };
 
-
     return (
       <section>
         <Helmet>

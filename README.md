@@ -47,13 +47,13 @@ La api tiene 2 servicios principales:
 	</ul>
 
   - <b>Comandos</b>: 
-  * npm test para correr los test de ruteo.
+  * npm test para correr los test de ruteo (hechos con mocha y chai).
   * npm start para iniciar la api
 
 </p>
 <h3>CLIENTE</h3>
 <p>
-El cliente esta hecho en ReactJS. Cuenta con 3 vistas principales:
+El cliente esta hecho en ReactJS, con Redux y redux-saga. Cuenta con 3 vistas principales:
 <ul>
 	<li><b>/</b> : Pantalla inicial, solo tiene la barra de busqueda.</li> 
 	<li><b><i>/items/:id</i></b> : Resultados de busqueda.</li>
@@ -90,7 +90,7 @@ En la raiz del mismo tenemos:
 </ul>
 
 - <b>Comandos</b>: 
-  * npm test para correr los test de la aplicación.
+  * npm test para correr los test de la aplicación(Hechos con jest y enzyme).
   * npm start para iniciar la aplicación.
 </p>
 

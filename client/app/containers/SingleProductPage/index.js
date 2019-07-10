@@ -19,7 +19,6 @@ const mapDispatchToProps = (dispatch) => ({
   }
 });
 
-
 const mapStateToProps = createStructuredSelector({
   error: makeSelectError(),
   loading: makeSelectLoading(),

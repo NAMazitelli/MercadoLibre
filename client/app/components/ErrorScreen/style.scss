@@ -6,7 +6,8 @@
 	align-items: center;
 	flex-direction: column;
 	.ErrorWrapper__image{
-		background: #ffe000;
+		position: relative;
+		background: rgb(255, 102, 102);
 		margin:70px;
 		border-radius:100%;
 		position:relative;
@@ -26,7 +27,70 @@
 	}
 	h2 {
 		font-size:32px;
-		font-weight:600;
+	    font-weight: 300;
 		color:#333;
+	}
+}
+
+
+
+@-webkit-keyframes circle {
+
+   from { -webkit-transform: scale(0); opacity: 0.1; }
+    50% { -webkit-transform: scale(0.7); opacity: 0.2; }
+    100% { -webkit-transform: scale(1); opacity: 0.3; }
+}
+
+@keyframes circle {
+
+
+    from { transform: scale(0); opacity: 0.1; }
+    50% { transform: scale(0.7); opacity: 0.2; }
+    100% { transform: scale(1); opacity: 0.3; }
+}
+
+.lds-bg {
+
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin:auto;
+    z-index:1;
+    div {
+		animation-direction:normal;
+    	margin: auto;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right:0;
+		box-sizing: border-box;
+		display: block;
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		background-color: #ffffff;
+		border-radius: 100%;
+		box-sizing: border-box;
+		display: block;
+		position: absolute;
+		transform:scale(-1);
+		opacity: 0;
+	    -webkit-animation:  circle 3s cubic-bezier(0.5, 0, 0.5, 1) infinite forwards  0s;
+	    -o-animation:  circle 3s cubic-bezier(0.5, 0, 0.5, 1) infinite forwards 0s;
+	    -ms-animation:  circle 3s cubic-bezier(0.5, 0, 0.5, 1) infinite forwards 0s; 
+	    -moz-animation:  circle 3s cubic-bezier(0.5, 0, 0.5, 1) infinite forwards 0s; 
+	    animation:  circle 3s cubic-bezier(0.5, 0, 0.5, 1) infinite forwards 0s;
+		&:nth-child(2) {
+			animation-delay:-1s;
+		}	    
+		&:nth-child(3) {
+			animation-delay:-2s;
+		}
+		&:nth-child(4) {
+			animation:unset;
+			opacity:0.3;
+			transform:none;
+		}
 	}
 }
